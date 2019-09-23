@@ -1,0 +1,27 @@
+body {
+   background-color: #232323;
+}
+
+.square {
+   width: 30%;
+   background: purple;
+   padding-bottom: 30%;
+   float: left;         /* This puts container 1 on the left and order the rest
+                           left-to-right. The width setting means only 3 will fit
+                           on a row, so there is a second row.
+                           float: right would have started container 1 on the right
+                           with the remaining order being right-to-left. */
+   margin: 1.66%
+}
+
+#container {
+   margin: 0 auto;      /* This centers horizontally */
+   max-width: 600px;    /* This made the container a max of 600 pixels wide which
+                           made the grid a lot smaller. Still two rows of three
+                           though which makes sense. The % is now out of a smaller
+                           width, but it is still a %. */
+}
+
+h1 {
+   color: white;
+}
