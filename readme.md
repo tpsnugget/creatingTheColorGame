@@ -17,3 +17,20 @@
          of the page in the h1
          If they are the same we will do one thing
          If they are not the same we will do something else
+
+# Chapter 197, Creating the Color Game, Pt 3
+   What if we pick the wrong color?
+      Remove the square by making it match the background color
+   Well, I got a little excited and went ahead and found the index of the square
+      when the correct selection is made, but I guess I need to find the index of
+      the clicked square when it is wrong as well.
+
+   Wrong again, I don't need to get the index unless I want to do things more manually.
+      He used the this operator to generate one line of code instead of my multiple
+      lines of code. I expect good coders do it his way and not my way.
+
+   Add in the "Try Again!" or "Correct!" text below the h1
+   When correct color is selected, change all square to that correct color
+      Also change the background of the h1
+   Now pick random colors
+   Have h1 update and it should work even though the colors array is still hardcoded
