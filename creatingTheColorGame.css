@@ -22,6 +22,16 @@ body {
                            width, but it is still a %. */
 }
 
-h1, span {
+h1, #colorDisplay {
    color: white;
+}
+
+span {
+   color: black;
+}
+
+#stripe {
+   background-color: white;
+   height: 30px;
+   text-align: center;
 }
