@@ -1,7 +1,12 @@
-var colors = ["rgb(255, 0, 0)", "rgb(255, 255, 0)", "rgb(0, 255, 0)",
-   "rgb(0, 255, 255)", "rgb(0, 0, 255)", "rgb(255, 0, 255)"]
+var colors = []
 
-pickedColor = pickColor() //selectColor()
+var numSquares = 6
+
+for (var i = 0; i < numSquares; i++) {
+   colors.push(pickRandomColor())
+}
+
+pickedColor = pickColor() 
 colorDisplay.textContent = pickedColor
 
 for (var i = 0; i < container.childElementCount; i++) {
@@ -29,7 +34,6 @@ for (var i = 0; i < container.childElementCount; i++) {
          // container.children[index].style.backgroundColor = "#232323";
          this.style.backgroundColor = "#232323";
          message.textContent = "Try Again!"
-         // console.log("Wrong, you clicked on square number " + (index + 1) ) 
       }
    })
 }
@@ -37,6 +41,19 @@ for (var i = 0; i < container.childElementCount; i++) {
 function pickColor() {
    var random = Math.floor(Math.random() * container.childElementCount)
    return colors[random]
+}
+
+function pickRandomColor() {
+   var rgb = "rgb("
+
+   for (var i = 0; i < 3; i++) {
+      rgb += Math.floor(Math.random() * 256)
+      if (i < 2) {
+         rgb += ", "
+      }
+   }
+   rgb += ")"
+   return rgb
 }
 
 function changeColors() {
