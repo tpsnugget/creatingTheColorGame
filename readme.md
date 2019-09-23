@@ -38,3 +38,9 @@
 # Chapter 198, Creating the Color Game, Pt 4
    Generate 6 random colors for the game
    Did it on my own!!
+
+# Chapter 199, Creating the Color Game, Pt 5
+   Add in Play Again button and the white stripe
+   I also added in putting the squares in the DOM based on Easy or Hard, but I
+      need to learn how to delete them from the DOM as well because they are
+      currently being added so I get more and more rows that I don't want.
