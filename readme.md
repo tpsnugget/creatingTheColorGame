@@ -34,3 +34,7 @@
       Also change the background of the h1
    Now pick random colors
    Have h1 update and it should work even though the colors array is still hardcoded
+
+# Chapter 198, Creating the Color Game, Pt 4
+   Generate 6 random colors for the game
+   Did it on my own!!
