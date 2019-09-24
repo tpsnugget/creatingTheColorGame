@@ -44,3 +44,13 @@
    I also added in putting the squares in the DOM based on Easy or Hard, but I
       need to learn how to delete them from the DOM as well because they are
       currently being added so I get more and more rows that I don't want.
+
+# Chapter 200, Creating the Color Game, Pt 6
+   I figured out how to remove childElements, container.lastElementChild.remove()
+   Add the EASY and HARD buttons
+   Have the current one be highlighted
+   Add in the js code to change from 3 to 6 and vice versa
+   Currently the EASY and HARD buttons also generate new colors, but when going
+      from 6 squares to 3 squares we need to genereate new colors since the color
+      we are supposed to pick might be in the row that gets removed.
+   He hides <div>'s by hiding them instead of removing them from the DOM as I did.

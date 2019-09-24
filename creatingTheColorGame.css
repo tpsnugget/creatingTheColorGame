@@ -35,3 +35,8 @@ span {
    height: 30px;
    text-align: center;
 }
+
+.selectedButton {
+   background-color: #232323;
+   color: white;
+}
