@@ -116,10 +116,13 @@ function changeColors() {
       container.children[j].style.backgroundColor = pickedColor
    }
    myH1.style.backgroundColor = pickedColor;
+   colorDisplay.style.backgroundColor = pickedColor;
 }
 
 resetButton.addEventListener("click", function () {
    generateColorSquares()
    resetButton.textContent = "NEW COLORS"
-   myH1.style.backgroundColor = "#232323";
+   myH1.style.backgroundColor = "steelblue";
+   colorDisplay.style.backgroundColor = "steelblue";
+   message.textContent = ""
 })
