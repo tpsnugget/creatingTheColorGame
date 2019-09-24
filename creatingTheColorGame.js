@@ -2,6 +2,20 @@ var colors = []
 
 var numSquares = 6
 
+easyButton.addEventListener("click", function() {
+   easyButton.classList.add("selectedButton")
+   hardButton.classList.remove("selectedButton")
+   numSquares = 3
+   generateColorSquares()
+})
+
+hardButton.addEventListener("click", function() {
+   easyButton.classList.remove("selectedButton")
+   hardButton.classList.add("selectedButton")
+   numSquares = 6
+   generateColorSquares()
+})
+
 generateColorSquares()
 
 // This generates the array of 3, 6, 9 ... squares
@@ -21,8 +35,11 @@ function generateColorSquares() {
 // This generates the proper number of squares in the DOM
 function createDOMSquares() {
    // Delete any old DOM squares to avoid extra rows
-   if (container.childElementCount > 1) {
-
+   var numSquaresInDOM = container.childElementCount
+   if (numSquaresInDOM > 1) {
+      for (var i = 0; i < numSquaresInDOM; i++) {
+         container.lastElementChild.remove()
+      }
    }
 
    for (var i = 0; i < numSquares; i++) {
@@ -34,7 +51,7 @@ function createDOMSquares() {
 
 // This puts the squares on the page
 function updateDOM() {
-   
+
    pickedColor = pickColor()
 
    // rgb <span> inside the h1
