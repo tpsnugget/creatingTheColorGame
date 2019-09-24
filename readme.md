@@ -54,3 +54,6 @@
       from 6 squares to 3 squares we need to genereate new colors since the color
       we are supposed to pick might be in the row that gets removed.
    He hides <div>'s by hiding them instead of removing them from the DOM as I did.
+
+# Chapter 201, Creating the Color Game, Pt 7
+   Working on styling
